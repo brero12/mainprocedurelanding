@@ -1,0 +1,27 @@
+{
+  "name": "uccpgp7d--run",
+  "version": "0.0.0",
+  "private": true,
+  "dependencies": {
+    "react": "19.0.0",
+    "react-dom": "19.0.0",
+    "@mui/material": "6.4.7",
+    "@mui/icons-material": "6.4.7",
+    "@mui/utils": "6.4.6",
+    "@mui/system": "6.4.7",
+    "@emotion/react": "11.14.0",
+    "@emotion/styled": "11.14.0",
+    "@types/react": "19.0.10",
+    "@types/react-dom": "19.0.4",
+    "typescript": "5.8.2"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject"
+  },
+  "devDependencies": {
+    "react-scripts": "latest"
+  }
+}

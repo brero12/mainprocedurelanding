@@ -14,16 +14,20 @@ const userTestimonials = [
     name: 'Bryan Rodriguez',
     occupation: 'Software Engineer Lead',
     testimonial:
-      'Dedicated software developer professional with a history of meeting company goals utilizing consistent and organized practices. I have 10+ years of experience. Skilled in working under pressure and adapting to new situations and challenges to best enhance the organizational brand. Excellent communication skills and extensive experience working with clients and partners. With knowledge in Java, Spring Boot, Spring, JavaScript, Angular, C#, React, PHP, .Net, AWS Cloud, NodeJs, Postgresql, Oracle, Mysql, MongoDB, and DynamoDB. With a high degree of responsibility and easy interpretation of organizational policies.',
+      `A highly accomplished and dedicated Software Development Lead with over 10 years of experience 
+      driving project success and enhancing organizational goals. This professional is a proven leader in architecting 
+      robust solutions and guiding development teams. He possess a deep technical expertise across 
+      a wide range of technologies. With a strong focus on collaboration and clear communication, 
+      he excel at working with clients and partners to deliver innovative solutions that elevate the company brand.`,
   },
   {
     avatar: <Avatar alt="Jorge Parra" src="/static/images/avatar/2.jpg" />,
     name: 'Jorge Parra',
     occupation: 'Product Designer Lead',
-    testimonial: `With over two decades of experience in technology and solid academic training including a Master in Artificial Intelligence and Systems Engineering, he combines advanced technical expertise with exceptional leadership skills. His ability to interpret business needs and transform them into innovative technological solutions defines his professional approach.
-Specialized in data analysis and Machine Learning model development using Python, Azure, and cutting-edge technologies like TensorFlow and Keras, he brings a comprehensive perspective spanning from infrastructure and databases to data visualization and cloud solutions. His analytical approach, combined with SCRUM agile methodologies and over eight years of experience in Data Analytics and Machine Learning, ensures successful project delivery that drives growth and digital transformation.
-His natural leadership, initiative, and excellent interpersonal relationships make him not only a technical expert but also a strategic leader committed to excellence and continuous innovation.
-Expert in data networks and infrastructure, which makes his solutions robust and scalable, ensuring operational continuity and optimal performance of implemented systems.`,
+    testimonial: `With 20+ years in technology and a Master's in AI and Systems Engineering, he combines deep technical expertise with strong leadership skills, transforming business needs into innovative solutions.
+      Specializing in data analysis and Machine Learning using Python, Azure, TensorFlow, and Keras, he delivers comprehensive solutions from infrastructure to cloud platforms. His experience with SCRUM methodologies 
+      and 8+ years in Data Analytics ensures successful project delivery that drives digital transformation.
+      His expertise in data networks creates robust, scalable solutions with optimal performance. As a natural leader with strong interpersonal skills, he's both a technical expert and strategic innovator committed to excellence.`,
   },
   {
     avatar: <Avatar alt="Omar Pino" src="/static/images/avatar/3.jpg" />,

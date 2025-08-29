@@ -15,7 +15,7 @@ jobs:
     # Define las variables de entorno para el trabajo
     env:
       # Reemplaza con el nombre de tu bucket de S3
-      S3_BUCKET: 'mainprocedure.com' 
+      S3_BUCKET: 'www.mainprocedure.com' 
       
     # Pasos del trabajo
     steps:

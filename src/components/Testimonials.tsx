@@ -7,10 +7,24 @@ import Box from "@mui/material/Box";
 import Container from "@mui/material/Container";
 import Grid from "@mui/material/Grid2";
 import { useTheme } from "@mui/system";
+import jorgeAvatar from "../assets/jorge.jpg";
+import omarAvatar from "../assets/omar.jpg";
+
+// Definiton of hover style
+const avatarHoverStyle = {
+  width: 56, 
+  height: 56,
+  transition: 'transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out',
+  '&:hover': {
+    transform: 'scale(1.9)', 
+    boxShadow: (theme) => `0 0 16px ${theme.palette.primary.main}`, 
+    cursor: 'pointer', 
+  },
+};
 
 const userTestimonials = [
   {
-    avatar: <Avatar alt="Bryan Rodriguez" src="/static/images/avatar/1.jpg" />,
+    avatar: <Avatar sx={{ ...avatarHoverStyle, bgcolor: 'primary.main' }} alt="Bryan Rodriguez" src="/static/images/avatar/1.jpg" />,
     name: "Bryan Rodriguez",
     occupation: "Software Engineer Lead",
     testimonial: `A highly accomplished and dedicated Software Development Lead with over 10 years of experience 
@@ -20,7 +34,7 @@ const userTestimonials = [
       he excel at working with clients and partners to deliver innovative solutions that elevate the company brand.`,
   },
   {
-    avatar: <Avatar alt="Jorge Parra" src="/static/images/avatar/2.jpg" />,
+    avatar: <Avatar sx={{ ...avatarHoverStyle, bgcolor: 'primary.main' }} alt="Jorge Parra" src={jorgeAvatar} />,
     name: "Jorge Parra",
     occupation: "Product Designer Lead",
     testimonial: `A seasoned technology leader with a Master's degree in Artificial Intelligence and Systems Engineering, 
@@ -31,36 +45,31 @@ const userTestimonials = [
     and robust solutions that drive digital transformation.`,
   },
   {
-    avatar: <Avatar alt="Omar Pino" src="/static/images/avatar/3.jpg" />,
+    avatar: <Avatar sx={{ ...avatarHoverStyle, bgcolor: 'primary.main' }} alt="Omar Pino" src={omarAvatar} />,
     name: "Omar Pino",
     occupation: "Innovation Lead",
-    testimonial: `With 20+ years in technology and a Master's in AI and Systems Engineering, 
-      he combines deep technical expertise with strong leadership skills, transforming business needs 
-      into innovative solutions. Specializing in data analysis and Machine Learning using Python, Azure, TensorFlow, 
-      and Keras, he delivers comprehensive solutions from infrastructure to cloud platforms. His experience 
-      with SCRUM methodologies and 8+ years in Data Analytics ensures successful project delivery that drives digital 
-      transformation. His expertise in data networks creates robust, scalable solutions with optimal performance. 
-      As a natural leader with strong interpersonal skills, he's both a technical expert and strategic 
-      innovator committed to excellence.`,
+    testimonial: `A results-driven Mechatronic Engineer with over 5 years of experience in applied research, 
+    product development, and immersive technologies. He specializes in robotics, VR/AR/MR simulations, 
+    and automation systems, delivering cost-effective solutions that enhance performance in healthcare 
+    and manufacturing. With strong expertise in Unity 3D, CAD, and sensor integration, 
+    he combines engineering precision with creative design to develop innovative processes 
+    and immersive digital experiences. Skilled in leading complete project lifecycles, 
+    he applies agile methodologies to ensure scalable, optimized, and user-centered solutions. 
+    Passionate about innovation and problem-solving, he is dedicated to advancing robotics, simulation, 
+    and automation through cutting-edge technology`,
   },
 ];
 
 const whiteLogos = [
-  "https://assets-global.website-files.com/61ed56ae9da9fd7e0ef0a967/6560628e8573c43893fe0ace_Sydney-white.svg",
-  "https://assets-global.website-files.com/61ed56ae9da9fd7e0ef0a967/655f4d520d0517ae8e8ddf13_Bern-white.svg",
-  "https://assets-global.website-files.com/61ed56ae9da9fd7e0ef0a967/655f46794c159024c1af6d44_Montreal-white.svg",
-  "https://assets-global.website-files.com/61ed56ae9da9fd7e0ef0a967/61f12e891fa22f89efd7477a_TerraLight.svg",
-  "https://assets-global.website-files.com/61ed56ae9da9fd7e0ef0a967/6560a09d1f6337b1dfed14ab_colorado-white.svg",
-  "https://assets-global.website-files.com/61ed56ae9da9fd7e0ef0a967/655f5caa77bf7d69fb78792e_Ankara-white.svg",
+  "",
+  "",
+  "",
 ];
 
 const darkLogos = [
-  "https://assets-global.website-files.com/61ed56ae9da9fd7e0ef0a967/6560628889c3bdf1129952dc_Sydney-black.svg",
-  "https://assets-global.website-files.com/61ed56ae9da9fd7e0ef0a967/655f4d4d8b829a89976a419c_Bern-black.svg",
-  "https://assets-global.website-files.com/61ed56ae9da9fd7e0ef0a967/655f467502f091ccb929529d_Montreal-black.svg",
-  "https://assets-global.website-files.com/61ed56ae9da9fd7e0ef0a967/61f12e911fa22f2203d7514c_TerraDark.svg",
-  "https://assets-global.website-files.com/61ed56ae9da9fd7e0ef0a967/6560a0990f3717787fd49245_colorado-black.svg",
-  "https://assets-global.website-files.com/61ed56ae9da9fd7e0ef0a967/655f5ca4e548b0deb1041c33_Ankara-black.svg",
+  "",
+  "",
+  "",
 ];
 
 const logoStyle = {

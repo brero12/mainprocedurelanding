@@ -9,22 +9,23 @@ import Grid from "@mui/material/Grid2";
 import { useTheme } from "@mui/system";
 import jorgeAvatar from "../assets/jorge.jpg";
 import omarAvatar from "../assets/omar.jpg";
+import type { Theme } from "@mui/material";
 
 // Definiton of hover style
-const avatarHoverStyle = {
+const getAvatarHoverStyle = (theme: Theme) => ({
   width: 56, 
   height: 56,
   transition: 'transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out',
   '&:hover': {
     transform: 'scale(1.9)', 
-    boxShadow: (theme) => `0 0 16px ${theme.palette.primary.main}`, 
+    boxShadow: `0 0 16px ${theme.palette.primary.main}`,
     cursor: 'pointer', 
   },
-};
+});
 
 const userTestimonials = [
   {
-    avatar: <Avatar sx={{ ...avatarHoverStyle, bgcolor: 'primary.main' }} alt="Bryan Rodriguez" src="/static/images/avatar/1.jpg" />,
+    avatar: <Avatar sx={{ ...getAvatarHoverStyle, bgcolor: 'primary.main' }} alt="Bryan Rodriguez" src="/static/images/avatar/1.jpg" />,
     name: "Bryan Rodriguez",
     occupation: "Software Engineer Lead",
     testimonial: `A highly accomplished and dedicated Software Development Lead with over 10 years of experience 
@@ -34,7 +35,7 @@ const userTestimonials = [
       he excel at working with clients and partners to deliver innovative solutions that elevate the company brand.`,
   },
   {
-    avatar: <Avatar sx={{ ...avatarHoverStyle, bgcolor: 'primary.main' }} alt="Jorge Parra" src={jorgeAvatar} />,
+    avatar: <Avatar sx={{ ...getAvatarHoverStyle, bgcolor: 'primary.main' }} alt="Jorge Parra" src={jorgeAvatar} />,
     name: "Jorge Parra",
     occupation: "Product Designer Lead",
     testimonial: `A seasoned technology leader with a Master's degree in Artificial Intelligence and Systems Engineering, 
@@ -45,7 +46,7 @@ const userTestimonials = [
     and robust solutions that drive digital transformation.`,
   },
   {
-    avatar: <Avatar sx={{ ...avatarHoverStyle, bgcolor: 'primary.main' }} alt="Omar Pino" src={omarAvatar} />,
+    avatar: <Avatar sx={{ ...getAvatarHoverStyle, bgcolor: 'primary.main' }} alt="Omar Pino" src={omarAvatar} />,
     name: "Omar Pino",
     occupation: "Innovation Lead",
     testimonial: `A results-driven Mechatronic Engineer with over 5 years of experience in applied research, 
@@ -148,6 +149,9 @@ export default function Testimonials() {
               >
                 <CardHeader
                   avatar={testimonial.avatar}
+                  sx={(theme) => ({
+                    '& .MuiAvatar-root': getAvatarHoverStyle(theme),
+                  })}
                   title={testimonial.name}
                   subheader={testimonial.occupation}
                 />
